@@ -1,4 +1,3 @@
-<!-- src/components/MyComponent.vue -->
 <script setup>
   
 import axios from "axios";
@@ -40,12 +39,9 @@ function sendMessage() {
 
     }
 </script>
+
 <template>
-  <div class="flex flex-col justify-center items-center   p-8  mx-40  relative top-20">
-    <h1 class=" text-8xl font-semibold text-gray-300 mb-4">Welcome to ChatForecast</h1>
-    <p class="welcome text-2xl text-gray-400 mb-6">Your reliable companion for accurate weather forecasts.</p>
-  </div>
-  <main class="home-main relative top-20  bg-slate-100 bg-opacity-5  rounded z-0 mx-40  ">
+    <main class="home-main relative top-20  bg-slate-100 bg-opacity-5  rounded z-0 mx-40  ">
     <div class="chat-container  bg-slate-100 shadow-inner shadow-slate-300  relative top-20">
       <div class="chat-box" id="chatBox">
         <!-- Chat messages will be displayed here -->

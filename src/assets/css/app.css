@@ -1,0 +1,101 @@
+/* src/assets/css/app.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html{
+    background: rgb(27, 28, 40);
+}
+
+.home-main{
+    height: 100vh;
+}
+
+.chat-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    background-color: #c0f29c;
+    padding: 5px;
+    margin-left:50%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.user-message-received{
+    display:flex;
+    flex-direction: column;
+    background-color: #f8d8c6;
+    padding: 5px;
+    margin-right:50%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.other-message {
+    background-color: #F0F0F0;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-field {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.send-button {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.welcome{
+    animation: color 3.6s infinite ease-in;
+}
+@keyframes color {
+    0%{
+        color:white;
+    }
+    20%{
+        color:rgb(124, 124, 170);
+    }
+    40%{
+        color:rgb(142, 142, 107);
+    }
+    60%{
+        color:rgb(142, 198, 140);
+    }
+    80%{
+        color:indigo;
+    }
+    90%{
+        color:indianred;
+    }
+    100%{
+        color:white;
+    }
+}
