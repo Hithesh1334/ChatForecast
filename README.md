@@ -1,4 +1,4 @@
-# chat-app
+# chatForecast-application
 
 ## Project setup
 ```
