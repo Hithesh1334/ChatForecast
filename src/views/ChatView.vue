@@ -58,6 +58,7 @@ function sendMessage() {
                 }
             }
             console.log("dict", dict)
+
             for (let key in dict) {
                 if (key == 'icon') {
                     const newImg = document.createElement('img');
@@ -65,10 +66,16 @@ function sendMessage() {
                     newImg.src = dict[key]
                     newMessage.appendChild(newImg);
                 }
+                else if (key == ""){
+                    const newPEle = document.createElement('p');
+                    newPEle.className = "weather-p"
+                    newPEle.textContent = dict[key];
+                    newMessage.appendChild(newPEle);
+                }
                 else {
                     const newPEle = document.createElement('p');
                     newPEle.className = "weather-p"
-                    newPEle.textContent = key + " : " + dict[key];
+                    newPEle.textContent = key.toUpperCase() + " : " + dict[key];
                     newMessage.appendChild(newPEle);
                 }
 
